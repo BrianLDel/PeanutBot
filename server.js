@@ -1,9 +1,13 @@
 console.log('The bot is Starting...');
 require('dotenv').config();
 
+
 const frases = require('./phrases.js');
-const TB = require('quick-twitter-bot');
+//const TB = require('quick-twitter-bot');
 const _ = require('lodash');
+
+const app = require('./app');
+
 
 var backupFrases = [];
 var misFrases = frases;
@@ -16,18 +20,24 @@ function randomPhrase(phrases){
 function tweetPhrase() {
     var frase = randomPhrase(misFrases);
     if(misFrases.length > 1){
-        TB.newTweet(frase);
+        console.log(frase);
+        //TB.newTweet(frase);
         backupFrases.push(frase);
         _.pull(misFrases,frase);
     }else{
-        TB.newTweet(frase);
+        console.log(frase);
+        //TB.newTweet(frase);
         misFrases = _.union(backupFrases, misFrases);
         backupFrases = [];
     }
 }
 
 
-
 setInterval(function () {
     tweetPhrase();
-},14400000);
+    console.log(misFrases);
+},4000);
+
+
+app.listen(app.get('port'));
+console.log(`Server on Port ${app.get('port')}`);
