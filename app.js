@@ -10,7 +10,7 @@ app.use(express.json());
 
 //routes
 app.get('/', (req, res) => {
-    res.send(`The API is at http://localhost:${app.get('port')} y el Bot está working joia :)`);
+    res.send(`Estas en https://mrpeanutbotter.appspot.com/ y el Bot está working joia, ahora solo relax :)`);
 });
 
 module.exports = app;
