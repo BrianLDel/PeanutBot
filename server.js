@@ -72,7 +72,7 @@ async function replyTweet() {
         
         }
         tweetsAlreadyRes.push(tweetToRespond);
-        console.log('eL PUSH LO HACE.')
+
         if(tweetsAlreadyRes.length > 41){
         tweetsAlreadyRes = _.take(tweetsAlreadyRes,22);
         }
