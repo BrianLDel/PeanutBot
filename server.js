@@ -46,6 +46,7 @@ function tweetPhrase() {
 }
 
 var tweetsAlreadyRes = [];
+var lastTweet={};
 
 async function replyTweet() {
     let tweetsRecieved = [];
@@ -60,29 +61,36 @@ async function replyTweet() {
         var text = tweetToRespond.text;
         if(text.includes('Hola')||text.includes('Hi')||text.includes('hola')||text.includes('hi')){
             let dirImage = randomHappyDir(iHappy);
+            if(tweetToRespond.id_str !== lastTweet.id_str)
             replyATweetWithMedia(dirImage,username,'Hakuna Matata',id);
 
         }else if(text.includes('quiero')||text.includes('gusta')||text.includes('jaja')){
             let dirImage = randomKeDir(iKe);
+            if(tweetToRespond.id_str !== lastTweet.id_str)
             replyATweetWithMedia(dirImage,username,'WAAAT',id);
             
         }else if(text.includes('perro')||text.includes('lindo')||text.includes('perrito')){
             let dirImage = randomArrogantDir(iArrogant);
+            if(tweetToRespond.id_str !== lastTweet.id_str)
             replyATweetWithMedia(dirImage,username,'That´s me',id);
     
         }else if(text.includes('gane')||text.includes('miedo')||text.includes('coronavirus')){
             let dirImage = randomSurpraiseDir(iSurpraise);
+            if(tweetToRespond.id_str !== lastTweet.id_str)
             replyATweetWithMedia(dirImage,username,'didn´t expect it',id);
         
         }else if(text.includes('ojala')||text.includes('espero')||text.includes('ojalá')){
             let dirImage = randomSuspiciousDir(iSuspicious);
+            if(tweetToRespond.id_str !== lastTweet.id_str)
             replyATweetWithMedia(dirImage,username,'Hummm you sure? ',id);
         
         }else{
             let dirImage = randomSuspiciousDir(iSuspicious);
+            if(tweetToRespond.id_str !== lastTweet.id_str)
             replyATweetWithMedia(dirImage,username,'Hummm you sure? ',id);
         }
-        
+
+        lastTweet = tweetToRespond;
         tweetsAlreadyRes.push(tweetToRespond);
 
         if(tweetsAlreadyRes.length > 41){
