@@ -10,7 +10,7 @@ app.use(express.json());
 
 //routes
 app.get('/', (req, res) => {
-    res.send(`Estas en https://mrpeanutbotter.appspot.com/ y el Bot está working joia, ahora solo relax :)`);
+    res.send(`Estas en https://mrpeanutbotter.appspot.com/ y el Bot está working joia :)`);
 });
 
 module.exports = app;
