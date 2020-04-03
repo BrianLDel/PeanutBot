@@ -112,7 +112,7 @@ async function tweetTo(user) {
     if (!actualBl.in_reply_to_screen_name) {
         if(lastBl.id_str !== actualBl.id_str){
             T.post('statuses/update',{status: `@${user} ${frase}`,in_reply_to_status_id: id},function (err, reply) {
-                if(err) console.log(err.message)
+                if(err) console.log(err.message);
                 else console.log('Tweeted: ' + reply.text);
             });
             lastBl = actualBl;
@@ -131,10 +131,6 @@ setInterval(function () {
     tweetPhrase();
 },14400000);
         
-setInterval(function () {
-    tweetTo('blonstark');
-},60000);
-
 
 app.listen(app.get('port'));
 console.log(`Server on Port ${app.get('port')}`);
