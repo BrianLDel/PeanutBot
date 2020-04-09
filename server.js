@@ -15,7 +15,7 @@ const { randomHappyDir, randomArrogantDir, randomSurpraiseDir, randomSuspiciousD
 const app = require('./app');
 
 
-var T = new Twit({
+const T = new Twit({
     consumer_key: process.env.CONSUMER_KEY,
     consumer_secret: process.env.CONSUMER_SECRET,
     access_token: process.env.ACCESS_TOKEN,
@@ -23,15 +23,15 @@ var T = new Twit({
 });
 
 
-var backupFrases = [];
-var misFrases = frases;
+let backupFrases = [];
+let misFrases = frases;
 
 function randomPhrase(phrases){
     return phrases[Math.floor(Math.random() * phrases.length)];
 }
 
 function tweetPhrase() {
-    var frase = randomPhrase(misFrases);
+    const frase = randomPhrase(misFrases);
     if(misFrases.length > 1){
         console.log(frase);
         TB.newTweet(frase);
@@ -45,8 +45,8 @@ function tweetPhrase() {
     }
 }
 
-var tweetsAlreadyRes = [];
-var lastTweet={};
+let tweetsAlreadyRes = [];
+let lastTweet={};
 
 async function replyTweet() {
     let tweetsRecieved = [];
@@ -55,37 +55,37 @@ async function replyTweet() {
         
     let actualList = _.filter(tweetsRecieved,(e)=>{return !_.includes(_.map(tweetsAlreadyRes,'id_str'),e.id_str)});
     if(actualList.length!==0){  
-        var tweetToRespond = _.last(actualList);
-        var username = tweetToRespond.user.screen_name;
-        var id = tweetToRespond.id_str;
-        var text = tweetToRespond.text;
+        const tweetToRespond = _.last(actualList);
+        const username = tweetToRespond.user.screen_name;
+        const id = tweetToRespond.id_str;
+        const text = tweetToRespond.text;
         if(text.includes('Hola')||text.includes('Hi')||text.includes('hola')||text.includes('hi')){
-            let dirImage = randomHappyDir(iHappy);
+            const dirImage = randomHappyDir(iHappy);
             if(tweetToRespond.id_str !== lastTweet.id_str)
             replyATweetWithMedia(dirImage,username,'Hakuna Matata',id);
 
         }else if(text.includes('quiero')||text.includes('gusta')||text.includes('jaja')){
-            let dirImage = randomKeDir(iKe);
+            const dirImage = randomKeDir(iKe);
             if(tweetToRespond.id_str !== lastTweet.id_str)
             replyATweetWithMedia(dirImage,username,'WAAAT',id);
             
         }else if(text.includes('perro')||text.includes('lindo')||text.includes('perrito')){
-            let dirImage = randomArrogantDir(iArrogant);
+            const dirImage = randomArrogantDir(iArrogant);
             if(tweetToRespond.id_str !== lastTweet.id_str)
             replyATweetWithMedia(dirImage,username,'That´s me',id);
     
         }else if(text.includes('gane')||text.includes('miedo')||text.includes('coronavirus')){
-            let dirImage = randomSurpraiseDir(iSurpraise);
+            const dirImage = randomSurpraiseDir(iSurpraise);
             if(tweetToRespond.id_str !== lastTweet.id_str)
             replyATweetWithMedia(dirImage,username,'didn´t expect it',id);
         
         }else if(text.includes('ojala')||text.includes('espero')||text.includes('ojalá')){
-            let dirImage = randomSuspiciousDir(iSuspicious);
+            const dirImage = randomSuspiciousDir(iSuspicious);
             if(tweetToRespond.id_str !== lastTweet.id_str)
             replyATweetWithMedia(dirImage,username,'Hummm you sure? ',id);
         
         }else{
-            let dirImage = randomSuspiciousDir(iSuspicious);
+            const dirImage = randomSuspiciousDir(iSuspicious);
             if(tweetToRespond.id_str !== lastTweet.id_str)
             replyATweetWithMedia(dirImage,username,'Hummm you sure? ',id);
         }
@@ -100,8 +100,8 @@ async function replyTweet() {
         console.log('No hay menciones por responder.');
     }
 }
-var lastBl={};
-var actualBl;
+let lastBl={};
+let actualBl;
 
 async function tweetTo(user) {
     let frase = randomPhrase(misFrases);

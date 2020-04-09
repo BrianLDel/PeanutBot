@@ -21,7 +21,24 @@ var phrases = [
     'Es tan estúpido que no se da cuenta de lo destrozado que debería estar. Lo envidio',
     'No puedo decirle que no a la gente, porque quiero que todos me quieran.',
     'Cuando haces cosas malas, tienes algo que puedes usar cuando te dejan: que no eres tú, que fue eso malo que hiciste.',
-    'Nunca más nos encontramos,\nnunca más la he vuelto a ver,\nninguno pudo vencer\nel abismo, que creamos;\ny por la Vida marchamos\npaladeando una victoria...\nque sólo tiene la Gloria\nde sabernos derrotados...!'
+    'Nunca más nos encontramos,\nnunca más la he vuelto a ver,\nninguno pudo vencer\nel abismo, que creamos;\ny por la Vida marchamos\npaladeando una victoria...\nque sólo tiene la Gloria\nde sabernos derrotados...!',
+    `Y así... se desmoronó
+    al soplo cruel del Destino
+    el altar que construímos
+    en tibias horas del Amor...
+    Pero... en mi mano quedó
+    como un recuerdo postrero,
+    su perfume, que no puedo
+    ni quiero, decirle... ¡Adios...!`,
+    `Ya la tienen señalada,
+    la buscan y la provocan;
+    las compañeras la chocan
+    pero, no consiguen nada,
+    porque su altiva mirada,
+    y ese rictus de su boca,
+    tan encima la coloca
+    que hiere sin decir nada.`
+
 ];
 
 module.exports = phrases;
