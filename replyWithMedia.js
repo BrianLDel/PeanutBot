@@ -56,4 +56,5 @@ function replyATweetWithMedia(imageDir,userName,tweetText,id) {
     })
 }
 
+
 module.exports = {randomHappyDir, randomArrogantDir, randomKeDir, randomSurpraiseDir, randomSuspiciousDir, replyATweetWithMedia};
