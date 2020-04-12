@@ -125,11 +125,11 @@ async function tweetTo(user) {
 setInterval(function () {
     replyTweet().then(()=>{console.log('Task successful');
     });
-},10000);
+},180000);
     
-// setInterval(function () {
-//     tweetPhrase();
-// },14400000);
+setInterval(function () {
+    tweetPhrase();
+},14400000);
         
 
 app.listen(app.get('port'));
