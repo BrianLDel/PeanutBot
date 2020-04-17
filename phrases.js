@@ -4,7 +4,6 @@ var phrases = [
     'Naciste roto. Ese es tu derecho de nacimiento.',
     'Yo… Quiero sentirme bien acerca de mí mismo. De la forma en la que tú lo haces. Y no sé cómo. No sé si puedo.',
     'El universo es un vacío cruel e indiferente. La clave para ser feliz no es la búsqueda de significado, es solamente mantenerte ocupado con un sin sentido sin importancia y eventualmente estarás muerto.',
-    '¿Sabes? A veces siento que nací con una fuga, y cualquier bondad con la que haya empezado lentamente se ha derramado de mí y ahora la he perdido toda. Y nunca la voy a recuperar. Es muy tarde. La vida es una serie de puertas cerrándose, ¿no?',
     'Es tan cruel dejar que la gente te ame. Todo lo que haces es prometerles que un día les romperás el corazón.',
     'Lleva un largo tiempo darse cuenta cuán realmente miserable eres y todavía más darse cuenta de que no tiene que ser así. Sólo después de resignarlo todo, puedes encontrar un camino para ser feliz. ',
     'Y un día vas a mirar alrededor y vas a darte cuenta de que todo el mundo te ama, pero nadie te quiere. Y ese es el sentimiento más solitario del mundo.',
@@ -12,8 +11,6 @@ var phrases = [
     'No soy gay. Digo, no creo que lo sea, pero… No creo que sea heterosexual, tampoco. No sé qué soy. Creo que tal vez no sea nada.',
     'Algunas veces tengo esta pequeña voz en el fondo de mi cabeza que dice algo así como \"Hey, ¡todos te odian! ¡Y no se equivocan al sentirse así!\"',
     'No es vergonzoso morir por nada. Es por lo que la mayoría de gente muere.',
-    'Ajjj, joder. Odio esto. Correr es horrible. TODO es lo peor.',
-    'Es curioso. Cuando miras a alguien a través de gafas de color rosa, todas las banderas rojas parecen simplemente... banderas.',
     'Solo somos dos personas que se sienten solas intentando odiarse un poco menos a sí mismas.',
     'No puedo seguir preguntándome si soy feliz, porque solo me hace más infeliz. No sé si creo en la verdadera felicidad.',
     'Eres una persona horrible y no entiendes que eres una persona horrible… Pero eso no te hace menos horrible.',
@@ -22,23 +19,13 @@ var phrases = [
     'No puedo decirle que no a la gente, porque quiero que todos me quieran.',
     'Cuando haces cosas malas, tienes algo que puedes usar cuando te dejan: que no eres tú, que fue eso malo que hiciste.',
     'Nunca más nos encontramos,\nnunca más la he vuelto a ver,\nninguno pudo vencer\nel abismo, que creamos;\ny por la Vida marchamos\npaladeando una victoria...\nque sólo tiene la Gloria\nde sabernos derrotados...!',
-    `Y así... se desmoronó
-    al soplo cruel del Destino
-    el altar que construímos
-    en tibias horas del Amor...
-    Pero... en mi mano quedó
-    como un recuerdo postrero,
-    su perfume, que no puedo
-    ni quiero, decirle... ¡Adios...!`,
-    `Ya la tienen señalada,
-    la buscan y la provocan;
-    las compañeras la chocan
-    pero, no consiguen nada,
-    porque su altiva mirada,
-    y ese rictus de su boca,
-    tan encima la coloca
-    que hiere sin decir nada.`
-
+    'Y así... se desmoronó\nal soplo cruel del Destino\nel altar que construímos\nen tibias horas del Amor...\nPero... en mi mano quedó\ncomo un recuerdo postrero,\nsu perfume, que no puedo\nni quiero, decirle... ¡Adios...!',
+    'Ya la tienen señalada,\nla buscan y la provocan;\nlas compañeras la chocan\npero, no consiguen nada,\nporque su altiva mirada,\ny ese rictus de su boca,\ntan encima la coloca\nque hiere sin decir nada.',
+    'Ya ve qué sencillo... se olvida el presente,\nrevive el pasado que ya se perdio:\nde nuevo en el barrio... la chica de enfrente,\ny allá la casita donde usted nació.',
+    'Entonces pienso en la vida\nque uno dejó escapar,\npor entregarse a soñar,\nno vivió como debía.\n¿Donde se fue la alegría\nque en estas calles desiertas,\nlos vecinos, en las puertas,\ncon sus charlas florecían?...',
+    '¡Ah! cuántos pobres andamos\nbuscando lo que perdimos,\npor esa ley del Destino\nque mata lo que adoramos.',
+    'Quise llamarla a mi lado\npero, un algo lo impedía\nsu dulce nombre moría\nen mis labios apretados...!\nCon los ojos afiebrados\nmiré la casa de enfrente:\n-cómo la vi diferente-\ny nada la había cambiado...!',
+    'Noche que se hace larga,\npor el sueño que no llega,\nangustia que trae la espera\ny aumenta la madrugada\nque tímida y sonrosada\nviene siguiendo al lucero;\notra noche de desvelo...\ny una lágrima en la almohada...!'
 ];
 
 module.exports = phrases;
